@@ -14,3 +14,13 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
+
+document.onkeydown = function (e) {
+  if (event.keyCode == 123) {
+    return false;
+  }
+};
